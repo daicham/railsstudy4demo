@@ -5,4 +5,15 @@
 <p>
   <%= link_to "さようなら！", say_goodbye_path %>と表示します。
 </p>
-
+<p>
+  自由課題1-1: 1 + 2 = <%= 1+2 %><br/>
+  自由課題1-2: "cow" + "boy" = <%= "cow" + "boy" %><br/>
+  自由課題1-3: 1時間後の時間(1.hour.from_now) = <%= 1.hour.from_now %>
+</p>
+<p>
+  自由課題2
+  <ul>
+    <% for file in @files %>
+    <li>ファイル名: <%= file %>
+    <% end %>
+  </ul>
